@@ -22,7 +22,7 @@ npm i protobufjs-cli
    5. /proto/Proto/*.proto:　proto/Proto ディレクトリ内のすべての .proto ファイルを探索
    6. -o ./src/generated/protocol.d.ts ./src/generated/protocol.js:　protocol.js からprotocol.d.ts を作成
 ```
-npx pbjs --no-verify --no-delimited -t static-module -w es6 -o ./src/generated/protocol.js ./proto/Proto/*.proto && npx pbts -o ./src/generated/protocol.d.ts ./src/generated/protocol.js  ]
+npx pbjs --no-verify --no-delimited -t static-module -w es6 -o ./src/generated/protocol.js ./proto/Proto/*.proto && npx pbts -o ./src/generated/protocol.d.ts ./src/generated/protocol.js
 ```
 #### 5. 生成された TS ファイルの require を import に変更
 #### 6. api を作成して呼び出す
